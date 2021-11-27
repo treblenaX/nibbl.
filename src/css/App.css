@@ -1,0 +1,78 @@
+* {
+  /* border: solid 1px green;  */
+  /* DEBUG */
+  font-family: 'Lexend', sans-serif;
+}
+
+html {
+  background-color: lightblue;
+}
+
+.home-page {
+  height: 100vh;  /* Fill screen */
+  background-color: lightblue;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.white-space {
+  flex: 1;
+}
+
+.grab-button {
+  /* flex: 0 0 5%; */
+  width: 10%;
+  align-self: center;
+  font-size: 1em;
+
+  margin-top: 20px;
+}
+
+.distance-input {
+  color: black;
+
+  text-align: center;
+  align-self: center;
+
+  width: 250px;
+  height: 50px;
+
+  border-radius: 10px;
+}
+
+.distance-input-append {
+  color: white;
+
+  margin-left: 5px;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.title-text {
+  color: white;
+  font-size: 5em;
+}
+
+/* ResultsModule */
+
+/* ResultCard */
+.result-card-container {
+  border: solid 2px black;
+  border-radius: 7px;
+  box-shadow: 3px 3px darkblue;
+
+  margin: 10px 10px 10px 10px;
+  background: white;
+}
+
+.result-card-text {
+  color: black;
+  padding: 0px 0px 10px 10px;
+}
+
+.result-card-text h1 {
+  font-size: 3rem;
+}
