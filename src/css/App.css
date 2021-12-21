@@ -1,74 +1,109 @@
-* {
+ * {
   /* border: solid 1px green;  */
   /* DEBUG */
-  font-family: 'Lexend', sans-serif;
-}
-
-html {
-  background-color: lightblue;
+  font-family: 'Roboto', sans-serif;
 }
 
 .home-page {
-  height: 100vh;  /* Fill screen */
-  background-color: lightblue;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.white-space {
-  flex: 1;
-}
-
-.grab-button {
-  /* flex: 0 0 5%; */
-  width: 10%;
-  align-self: center;
-  font-size: 1em;
-
-  margin-top: 20px;
-}
-
-.distance-input {
-  color: black;
-
-  text-align: center;
-  align-self: center;
-
-  width: 250px;
-  height: 50px;
-
-  border-radius: 10px;
-}
-
-.distance-input-append {
-  color: white;
-
-  margin-left: 5px;
+  height: 100%;  /* Fill screen */
+  background-color: #282828;
 }
 
 .title-container {
   text-align: center;
+  padding-top: 50px;
 }
 
 .title-text {
-  color: white;
+  color: #7445FF;
   font-size: 5em;
+}
+
+.grab-button {
+  color: #190061;
 }
 
 /* ResultsModule */
 
 /* ResultCard */
-.result-card-container {
+.result-card {
+  background-color: #1a1a1a;
+  border: 1px solid #938F99;
+  border-radius: 10px;
+}
+
+.result-card-header {
+  margin: 20px 20px 20px 20px;
+}
+
+.result-card-header-name {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.result-card-header-cuisines {
+  color: white;
+  font-size: 0.75rem;
+  margin-top: 25px;
+}
+
+.result-card-header-address {
+  color: white;
+  margin-top: 15px;
+}
+
+.result-card-media {
+  width: inherit;
+  height: 200px;
+}
+
+.image-container {
+  margin: 15px 0px 15px 15px;
+}
+
+.result-image {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 128px;
+}
+
+.result-card-rating {
+  color: #af95ff;
+  overflow-y: auto;
+}
+
+.rating-icon {
+  margin-right: 10px;
+}
+
+.rating-text {
+  margin-left: 10px;
+}
+
+.rating-separator {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.action-buttons {
+  border: none;
+}
+
+/* .result-card-container {
   border: solid 2px black;
   border-radius: 7px;
   box-shadow: 3px 3px darkblue;
 
   margin: 10px 10px 10px 10px;
   background: white;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .result-card-text {
+  flex: 3;
+
   color: black;
   padding: 0px 0px 10px 10px;
 }
@@ -76,3 +111,16 @@ html {
 .result-card-text h1 {
   font-size: 3rem;
 }
+
+.result-card-rating {
+  text-align: center;
+  padding-top: 1em;
+
+  flex: 1;
+}
+
+.result-card-price-level {
+  text-align: center;
+  padding-top: 1em;
+  flex: 1;
+}  */

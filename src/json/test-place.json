@@ -1,0 +1,663 @@
+{
+    "businesses": [
+        {
+            "id": "Y7GBUv3DxWvSkTCtgWaGkg",
+            "alias": "poquitos-seattle",
+            "name": "Poquitos",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/oEZanvpEVZfvaIxhBxUmPA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/poquitos-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 1194,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 47.61433,
+                "longitude": -122.31918
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1000 E Pike St",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98122",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "1000 E Pike St",
+                    "Seattle, WA 98122"
+                ]
+            },
+            "phone": "+12064534216",
+            "display_phone": "(206) 453-4216",
+            "distance": 7.600395580952079
+        },
+        {
+            "id": "JQAKcOzObl2I7vLKZLkBdQ",
+            "alias": "fogón-cocina-mexicana-seattle-2",
+            "name": "Fogón Cocina Mexicana",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/vxyeH6Z_btSo9fI7-cMyaw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/fog%C3%B3n-cocina-mexicana-seattle-2?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 1639,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 47.6154187,
+                "longitude": -122.3241733
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "600 E Pine St",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98122",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "600 E Pine St",
+                    "Seattle, WA 98122"
+                ]
+            },
+            "phone": "+12063207777",
+            "display_phone": "(206) 320-7777",
+            "distance": 395.8738187378985
+        },
+        {
+            "id": "KjlsXEMJip-R2UG2WugtXA",
+            "alias": "bimbos-cantina-seattle",
+            "name": "Bimbos Cantina",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/bbsIt7eQ7GgH6qqiAjdFUw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/bimbos-cantina-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 363,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 3.0,
+            "coordinates": {
+                "latitude": 47.61394,
+                "longitude": -122.31881
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "1013 E Pike St",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98122",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "1013 E Pike St",
+                    "Seattle, WA 98122"
+                ]
+            },
+            "phone": "+12063229950",
+            "display_phone": "(206) 322-9950",
+            "distance": 51.05451043065325
+        },
+        {
+            "id": "pNkHfhzrhED-2MU5D8Olzw",
+            "alias": "rancho-bravo-tacos-seattle-2",
+            "name": "Rancho Bravo Tacos",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uYDEfsw5nsoxpsyYNM0MrA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/rancho-bravo-tacos-seattle-2?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 816,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 47.61511,
+                "longitude": -122.318983
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "1001 E Pine St",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98122",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "1001 E Pine St",
+                    "Seattle, WA 98122"
+                ]
+            },
+            "phone": "+12063229399",
+            "display_phone": "(206) 322-9399",
+            "distance": 96.25893698820722
+        },
+        {
+            "id": "jDMRkUp1o-CI-FkUa0Xgcg",
+            "alias": "barrio-mexican-kitchen-and-bar-seattle",
+            "name": "Barrio Mexican Kitchen & Bar",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/7cscy9Zn6hEjY7K4yuRqPg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/barrio-mexican-kitchen-and-bar-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 1255,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "bars",
+                    "title": "Bars"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 47.6136667159702,
+                "longitude": -122.31662850827
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1420 12th Ave",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98122",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "1420 12th Ave",
+                    "Seattle, WA 98122"
+                ]
+            },
+            "phone": "+12065888105",
+            "display_phone": "(206) 588-8105",
+            "distance": 202.28312560496065
+        },
+        {
+            "id": "dyN-UDqTKMk9lnv99DBbhw",
+            "alias": "la-cocina-oaxaquena-seattle",
+            "name": "La Cocina Oaxaquena",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ptSXh_Vz_Eymu6oTas1Smw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/la-cocina-oaxaquena-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 501,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "bars",
+                    "title": "Bars"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 47.6154747009277,
+                "longitude": -122.328178405762
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1216 Pine St",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98101",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "1216 Pine St",
+                    "Seattle, WA 98101"
+                ]
+            },
+            "phone": "+12066238226",
+            "display_phone": "(206) 623-8226",
+            "distance": 684.9168956095615
+        },
+        {
+            "id": "ZNXRhAwOqfUWhwBHloLZJA",
+            "alias": "el-farol-mexican-restaurant-seattle",
+            "name": "El Farol Mexican Restaurant",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/euoq1lWFhF-wdfyUBSxFQg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/el-farol-mexican-restaurant-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 192,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 47.62296,
+                "longitude": -122.31288
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1467 E Republican St",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98112",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "1467 E Republican St",
+                    "Seattle, WA 98112"
+                ]
+            },
+            "phone": "+12063259005",
+            "display_phone": "(206) 325-9005",
+            "distance": 1073.094263746813
+        },
+        {
+            "id": "WW8SZVgtJNpjw7vhMXQLmQ",
+            "alias": "mezcaleria-oaxaca-seattle-7",
+            "name": "Mezcaleria Oaxaca",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/WKPqdq7m5FucWdaytLetsg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/mezcaleria-oaxaca-seattle-7?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 397,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "pubs",
+                    "title": "Pubs"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 47.61537,
+                "longitude": -122.32581
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "422 E Pine St",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98122",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "422 E Pine St",
+                    "Seattle, WA 98122"
+                ]
+            },
+            "phone": "+12063240506",
+            "display_phone": "(206) 324-0506",
+            "distance": 511.17417301806904
+        },
+        {
+            "id": "waU7h3jwePqPuZo-OIgaGg",
+            "alias": "cactus-restaurants-seattle-3",
+            "name": "Cactus Restaurants",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qkspoTdEof72DkRGJ91srQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/cactus-restaurants-seattle-3?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 836,
+            "categories": [
+                {
+                    "alias": "tex-mex",
+                    "title": "Tex-Mex"
+                },
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "newmexican",
+                    "title": "New Mexican Cuisine"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 47.621798,
+                "longitude": -122.336944
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "350 Terry Ave N",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98109",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "350 Terry Ave N",
+                    "Seattle, WA 98109"
+                ]
+            },
+            "phone": "+12069132250",
+            "display_phone": "(206) 913-2250",
+            "distance": 1573.496189776078
+        },
+        {
+            "id": "CCOknNO_ocdR8sHtJrSEuA",
+            "alias": "la-cocina-and-cantina-seattle",
+            "name": "La Cocina & Cantina",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/EZ6br2H59aEQZ0zfR4MTcQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/la-cocina-and-cantina-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 354,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "vegetarian",
+                    "title": "Vegetarian"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 47.6229331850266,
+                "longitude": -122.32090728095
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "432 Broadway Ave E",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98102",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "432 Broadway Ave E",
+                    "Seattle, WA 98102"
+                ]
+            },
+            "phone": "+12063231675",
+            "display_phone": "(206) 323-1675",
+            "distance": 973.6151202567003
+        },
+        {
+            "id": "hGxKFXlzvl21rjvfLePWWw",
+            "alias": "fonda-la-catrina-seattle",
+            "name": "Fonda La Catrina",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/U7AuT6g_7G_peKXhnwv6JQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/fonda-la-catrina-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 980,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 47.54992,
+                "longitude": -122.31781
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "5905 Airport Way S",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98108",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "5905 Airport Way S",
+                    "Seattle, WA 98108"
+                ]
+            },
+            "phone": "+12067672787",
+            "display_phone": "(206) 767-2787",
+            "distance": 7155.610853570117
+        },
+        {
+            "id": "WqQKSw8YEyyImnbzggmG5w",
+            "alias": "red-star-taco-bar-seattle",
+            "name": "Red Star Taco Bar",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/gqhsth9aeO0utC-5n6L1jQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/red-star-taco-bar-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 368,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "cocktailbars",
+                    "title": "Cocktail Bars"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 47.6514130785983,
+                "longitude": -122.351609878242
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "513 N 36th St",
+                "address2": "Ste E",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98103",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "513 N 36th St",
+                    "Ste E",
+                    "Seattle, WA 98103"
+                ]
+            },
+            "phone": "+12062583087",
+            "display_phone": "(206) 258-3087",
+            "distance": 4793.337146144323
+        },
+        {
+            "id": "vssqZD2IDD00bQltmYOB7w",
+            "alias": "el-moose-seattle",
+            "name": "El Moose",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2Nv7RUPTaenhEjqJNhHd9g/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/el-moose-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 927,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 47.66664,
+                "longitude": -122.38163
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "5242 Leary Ave NW",
+                "address2": null,
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98107",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "5242 Leary Ave NW",
+                    "Seattle, WA 98107"
+                ]
+            },
+            "phone": "+12067845568",
+            "display_phone": "(206) 784-5568",
+            "distance": 7473.4793303244505
+        },
+        {
+            "id": "0HGzdQ2HjA95IFQPQXb1vg",
+            "alias": "stoneburner-seattle",
+            "name": "Stoneburner",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/FQbRDAEevN2mkMJvTs4WDg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/stoneburner-seattle?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 682,
+            "categories": [
+                {
+                    "alias": "pizza",
+                    "title": "Pizza"
+                },
+                {
+                    "alias": "bars",
+                    "title": "Bars"
+                },
+                {
+                    "alias": "mediterranean",
+                    "title": "Mediterranean"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 47.6662974316062,
+                "longitude": -122.382751900253
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "5214 Ballard Ave NW",
+                "address2": "",
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98107",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "5214 Ballard Ave NW",
+                    "Seattle, WA 98107"
+                ]
+            },
+            "phone": "+12066952051",
+            "display_phone": "(206) 695-2051",
+            "distance": 7494.753632623572
+        },
+        {
+            "id": "MFP8MhZlBV2fuhOyHaF56w",
+            "alias": "tacos-el-asadero-seattle-2",
+            "name": "Tacos El Asadero",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/MegtLYTmsvEwkP7RBAUCPA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tacos-el-asadero-seattle-2?adjust_creative=GGQiv0pET3GpwKzxyAK5hA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=GGQiv0pET3GpwKzxyAK5hA",
+            "review_count": 339,
+            "categories": [
+                {
+                    "alias": "foodtrucks",
+                    "title": "Food Trucks"
+                },
+                {
+                    "alias": "tacos",
+                    "title": "Tacos"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 47.5711591,
+                "longitude": -122.2928947
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "3517 Rainier Ave S",
+                "address2": null,
+                "address3": "",
+                "city": "Seattle",
+                "zip_code": "98118",
+                "country": "US",
+                "state": "WA",
+                "display_address": [
+                    "3517 Rainier Ave S",
+                    "Seattle, WA 98118"
+                ]
+            },
+            "phone": "+12064760793",
+            "display_phone": "(206) 476-0793",
+            "distance": 5173.945000691407
+        }
+    ],
+    "total": 15,
+    "region": {
+        "center": {
+            "longitude": -122.3191822,
+            "latitude": 47.6142548
+        }
+    }
+}
