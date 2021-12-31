@@ -1,36 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as filledStar, faStarHalfAlt, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 import { faStar as emptyStar } from '@fortawesome/free-regular-svg-icons';
 import { faGoogle, faYelp } from '@fortawesome/free-brands-svg-icons'
 
 export default function ResultsModule(props) {
-    const allLocations = props.payload.test_data.results;
-    const onePlace = props.payload.test_place.businesses[0];
+    const [cards, setCards] = useState([]);
+    const googleData = props.payload.googleData;
+    // const onePlace = props.payload.test_place.businesses[0];
 
-    // Map out result data into cards
-    const cards = pickFiveIndices(allLocations).map((result) => (<ResultCard payload={{ googleData: result, yelpData: onePlace }}/>));
+    useEffect(() => {
+        // Map out result data into cards
+        setCards(googleData.map((result) => (<ResultCard payload={{ googleData: result , yelpData: null }}/>)));
+    }, [googleData])
+
+    // console.log(googleData);
 
     return (
         <div>
-            {cards}
+            {/* {googleData 
+                ? googleData.map((result) => (<ResultCard payload={{ googleData: result , yelpData: null }}/>)) 
+                : <span></span>
+            } */}
+            { cards }
         </div>
     );
 }
 
 function ResultCard(props) {
     const googleData = props.payload.googleData;
-    const yelpData = props.payload.yelpData;
+    // const yelpData = props.payload.yelpData;
 
     return (
         <div className="card result-card">
             <div className="card-header media-left">
-                <figure className="image-container">
+                {/* <figure className="image-container">
                     <img className="result-image" width="128" height="128" src={yelpData.image_url} />
-                </figure>
+                </figure> */}
                 <div className="result-card-header is-fullwidth media-content">
                     <h1><strong className="result-card-header-name">{googleData.name}</strong></h1>
-                    <h2 className="result-card-header-cuisines"><em>{createCuisines(yelpData.categories)}</em></h2>
+                    {/* <h2 className="result-card-header-cuisines"><em>{createCuisines(yelpData.categories)}</em></h2> */}
                     <h3 className="result-card-header-address">{googleData.formatted_address}</h3>
                 </div>
             </div>
@@ -41,11 +50,11 @@ function ResultCard(props) {
                         {createReviewStars(googleData.rating)}
                         <span className="rating-text">{googleData.rating}</span>
                     </div>
-                    <div className="column is-narrow">
+                    {/* <div className="column is-narrow">
                         <FontAwesomeIcon className="rating-icon" icon={faYelp} />
                         {createReviewStars(yelpData.rating)}
                         <span className="rating-text">{yelpData.rating}</span>
-                    </div>
+                    </div> */}
                     <div className="column is-narrow">
                         <p>{createPriceLevel(googleData.price_level)}</p>
                     </div>

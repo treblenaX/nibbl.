@@ -2,16 +2,20 @@
   /* border: solid 1px green;  */
   /* DEBUG */
   font-family: 'Roboto', sans-serif;
+  background-color: #282828;
 }
 
 .home-page {
-  height: 100%;  /* Fill screen */
-  background-color: #282828;
+    /* Fill screen */
+  display: flex;
+  flex-direction: column;
+  /* background-color: #282828; */
 }
 
 .title-container {
   text-align: center;
   padding-top: 50px;
+  flex: 1;
 }
 
 .title-text {
@@ -21,6 +25,10 @@
 
 .grab-button {
   color: #190061;
+}
+
+.home-page-container {
+  flex: 1;
 }
 
 /* ResultsModule */
