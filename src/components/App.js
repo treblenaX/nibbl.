@@ -3,6 +3,7 @@ import 'bulma/css/bulma.min.css';
 import '../css/App.css';
 import 'whatwg-fetch';
 import HomePageModule from './HomePageModule';
+import FooterModule from './FooterModule';
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
           </div>
           <HomePageModule className="home-page-container" />
       </div>
+      <footer className="footer">
+        <FooterModule />
+      </footer>
     </div>
   );
 }

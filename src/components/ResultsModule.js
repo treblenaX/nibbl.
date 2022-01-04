@@ -11,25 +11,44 @@ export default function ResultsModule(props) {
 
     useEffect(() => {
         // Map out result data into cards
-        setCards(googleData.map((result) => (<ResultCard payload={{ googleData: result , yelpData: null }}/>)));
+        setCards(googleData.map((result) => (<ResultCard payload={{ googleData: result }}/>)));
     }, [googleData])
 
     // console.log(googleData);
 
     return (
-        <div>
-            {/* {googleData 
-                ? googleData.map((result) => (<ResultCard payload={{ googleData: result , yelpData: null }}/>)) 
-                : <span></span>
-            } */}
+        <div className="result-module">
             { cards }
         </div>
     );
 }
 
 function ResultCard(props) {
+    const [isFlipped, setFlip] = useState(false);
     const googleData = props.payload.googleData;
-    // const yelpData = props.payload.yelpData;
+
+    const handleClick = () => {
+        console.log('click');
+        setFlip(true);
+    }
+
+    return (
+        <div>
+            { isFlipped ? <ResultCardDetails googleData={googleData} /> : <a onClick={handleClick} ><ResultCardBack /></a> }
+        </div>
+    );
+}
+
+function ResultCardBack() {
+    return (
+        <div className="card result-card result-card-back">
+            
+        </div>
+    )
+}
+
+function ResultCardDetails(props) {
+    const googleData = props.googleData;
 
     return (
         <div className="card result-card">
@@ -65,7 +84,7 @@ function ResultCard(props) {
                 <button className="button card-footer-item is-info is-outlined">MAP</button>
             </div>
         </div>
-    );
+    )
 }
 
 /* Private function helpers */

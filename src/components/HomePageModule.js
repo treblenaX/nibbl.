@@ -6,7 +6,7 @@ import CONFIG from '../config.json';
 import { Loader } from '@googlemaps/js-api-loader';
 import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStroopwafel, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faStroopwafel, faSpinner, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 const GOOGLE_URI = 'https://maps.googleapis.com/maps/api/place/textsearch/json?';
@@ -52,6 +52,7 @@ export default function HomePageModule() {
                         if (pagination && pagination.hasNextPage) { // Get more results
                             pagination.nextPage();
                         } else {    // If there are no more results
+                            console.log(googleData);
                             setGoogleData(pickFiveIndices(googleData));
                             setLoaded(true);
                         }
@@ -76,39 +77,20 @@ export default function HomePageModule() {
     return (
         <div>
             <div className="columns is-mobile is-centered">
-                <div className="column is-3">
+                <div className="column is-4-desktop is-8-mobile">
                     <input className="input is-rounded" onChange={handleChange} placeholder="ex: Seattle, WA"></input>
                 </div>
-                <div className="column is-2">
-                    <button className="button is-black is-rounded" type="input" onClick={handleClick}>Grab Results</button>
+                <div className="column is-1-desktop is-2-mobile">
+                    <button className="button is-black is-rounded" type="input" onClick={handleClick}>
+                        <FontAwesomeIcon icon={faSearch} />
+                    </button>
                 </div>
             </div>
             <div className="columns is-centered">
-            { isLoaded ?  <div> { googleData ? <ResultsModule payload={{ googleData: googleData }} /> : <span></span> } </div> :  <FontAwesomeIcon icon={faSpinner} /> }
+            { isLoaded ?  <div> { googleData ? <ResultsModule payload={{ googleData: googleData }} /> : <span></span> } </div> :  <FontAwesomeIcon className="spinner fa-spin" icon={faSpinner} /> }
             </div>
         </div>
     );
-}
-
-function getYelpData(results, setYelpData) {
-    const yelpData = results.map((location) => {
-        const params = {
-            location: encodeURIComponent(location.formatted_address),
-            term: location.name
-        }
-
-        $.ajax({
-            url         : 'https://api.yelp.com/v3/businesses/search?',
-            type        : 'GET',
-            dataType    : 'jsonp',
-            data        : {term: 'delis', latitude: 37.786882, longitude: -122.399972},
-            headers     : {
-                'Authorization': 'Bearer ' + CONFIG.YELP_API_KEY
-            }
-        });
-    });
-
-    console.log(yelpData);
 }
 
 function pickFiveIndices(results) {

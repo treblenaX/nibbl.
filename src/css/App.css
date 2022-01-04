@@ -2,14 +2,14 @@
   /* border: solid 1px green;  */
   /* DEBUG */
   font-family: 'Roboto', sans-serif;
-  background-color: #282828;
 }
 
 .home-page {
     /* Fill screen */
   display: flex;
   flex-direction: column;
-  /* background-color: #282828; */
+  min-height: 100vh;
+  background-color: #282828;
 }
 
 .title-container {
@@ -31,13 +31,27 @@
   flex: 1;
 }
 
+/* FooterModule */
+.footer {
+  text-align: center;
+  background-color: black;
+  padding: 7px;
+  margin: 0px;
+}
+
 /* ResultsModule */
+.spinner {
+  color: white;
+  font-size: 5rem;
+  margin-top: 15%;
+}
 
 /* ResultCard */
 .result-card {
   background-color: #1a1a1a;
   border: 1px solid #938F99;
   border-radius: 10px;
+  flex: 1;
 }
 
 .result-card-header {
@@ -95,6 +109,19 @@
 
 .action-buttons {
   border: none;
+}
+
+.result-card-back {
+  height: 15rem;
+  width: 11rem;
+}
+
+.result-module {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 4rem;
 }
 
 /* .result-card-container {
