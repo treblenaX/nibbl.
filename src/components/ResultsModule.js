@@ -4,6 +4,8 @@ import { faStar as filledStar, faStarHalfAlt, faDollarSign } from '@fortawesome/
 import { faStar as emptyStar } from '@fortawesome/free-regular-svg-icons';
 import { faGoogle, faYelp } from '@fortawesome/free-brands-svg-icons'
 
+const googleURI = 'https://www.google.com/search?';
+
 export default function ResultsModule(props) {
     const [cards, setCards] = useState([]);
     const googleData = props.payload.googleData;
@@ -13,8 +15,6 @@ export default function ResultsModule(props) {
         // Map out result data into cards
         setCards(googleData.map((result) => (<ResultCard payload={{ googleData: result }}/>)));
     }, [googleData])
-
-    // console.log(googleData);
 
     return (
         <div className="result-module">
@@ -28,13 +28,13 @@ function ResultCard(props) {
     const googleData = props.payload.googleData;
 
     const handleClick = () => {
-        console.log('click');
+        // Flip the card to its front
         setFlip(true);
     }
 
     return (
-        <div>
-            { isFlipped ? <ResultCardDetails googleData={googleData} /> : <a onClick={handleClick} ><ResultCardBack /></a> }
+        <div className="columns is-mobile is-centered">
+            { isFlipped ? <ResultCardDetails googleData={googleData} /> : <a className="column is-centered" onClick={handleClick} ><ResultCardBack /></a> }
         </div>
     );
 }
@@ -42,7 +42,7 @@ function ResultCard(props) {
 function ResultCardBack() {
     return (
         <div className="card result-card result-card-back">
-            
+            <p>n.</p>
         </div>
     )
 }
@@ -50,8 +50,13 @@ function ResultCardBack() {
 function ResultCardDetails(props) {
     const googleData = props.googleData;
 
+    const handleGoogle = () => {
+        // Direct to google
+        window.open(googleURI + 'q=' + encodeURIComponent(googleData.name + ' at ' + googleData.formatted_address), '_blank');
+    }
+
     return (
-        <div className="card result-card">
+        <div className="card result-card is-mobile">
             <div className="card-header media-left">
                 {/* <figure className="image-container">
                     <img className="result-image" width="128" height="128" src={yelpData.image_url} />
@@ -63,8 +68,8 @@ function ResultCardDetails(props) {
                 </div>
             </div>
             <div className="card-content">
-                <div className="columns is-mobile is-offset-3 result-card-rating">
-                    <div className="column is-narrow is-offset-3">
+                <div className="columns is-mobile result-card-rating">
+                    <div className="column is-narrow is-mobile is-centered">
                         <FontAwesomeIcon className="rating-icon" icon={faGoogle} />
                         {createReviewStars(googleData.rating)}
                         <span className="rating-text">{googleData.rating}</span>
@@ -74,14 +79,14 @@ function ResultCardDetails(props) {
                         {createReviewStars(yelpData.rating)}
                         <span className="rating-text">{yelpData.rating}</span>
                     </div> */}
-                    <div className="column is-narrow">
+                    <div className="column is-narrow is-mobile is-centered">
                         <p>{createPriceLevel(googleData.price_level)}</p>
                     </div>
                 </div>
             </div>
             <div className="card-footer buttons action-buttons">
-                <button className="button card-footer-item is-danger is-outlined">WEBSITE</button>
-                <button className="button card-footer-item is-info is-outlined">MAP</button>
+                <button className="button card-footer-item is-danger is-outlined" onClick={handleGoogle}>GOOGLE</button>
+                {/* <button className="button card-footer-item is-info is-outlined">MAP</button> */}
             </div>
         </div>
     )
@@ -138,21 +143,19 @@ function createPriceLevel(priceLevel) {
     return signs;
 }
 
-function pickFiveIndices(results) {
-    let freqMap = [];
+function encodeQueryParams(obj) {
+    let str = "";
+    let start = true;
 
-    for (let i = 0; i < results.length; i++) freqMap[i] = 0;
-
-    let arr = [];
-
-    while (arr.length < 5) {
-        const index = Math.floor(Math.random() * results.length);
-
-        if (freqMap[index] === 0) {
-            freqMap[index]++;
-            arr.push(results[index]);
+    for (const [key, value] of Object.entries(obj)) {
+        if (start) {
+            str += key + '=' + value;
+            start = false;
+        }
+        else {
+            str += '&' + key + '=' + value;
         }
     }
 
-    return arr;
+    return str;
 }

@@ -76,18 +76,18 @@ export default function HomePageModule() {
 
     return (
         <div>
-            <div className="columns is-mobile is-centered">
-                <div className="column is-4-desktop is-8-mobile">
+            <div className="columns is-tablet is-mobile is-centered">
+                <div className="column is-6-desktop is-6-tablet is-8-mobile is-centered">
                     <input className="input is-rounded" onChange={handleChange} placeholder="ex: Seattle, WA"></input>
                 </div>
-                <div className="column is-1-desktop is-2-mobile">
+                <div className="column is-1-desktop is-2-tablet is-2-mobile is-centered">
                     <button className="button is-black is-rounded" type="input" onClick={handleClick}>
                         <FontAwesomeIcon icon={faSearch} />
                     </button>
                 </div>
             </div>
             <div className="columns is-centered">
-            { isLoaded ?  <div> { googleData ? <ResultsModule payload={{ googleData: googleData }} /> : <span></span> } </div> :  <FontAwesomeIcon className="spinner fa-spin" icon={faSpinner} /> }
+            { isLoaded ?  <div className="columns is-centered is-mobile is-tablet is-centered"> { googleData ? <ResultsModule payload={{ googleData: googleData }} /> : <span></span> } </div> :  <FontAwesomeIcon className="spinner fa-spin" icon={faSpinner} /> }
             </div>
         </div>
     );
@@ -110,21 +110,4 @@ function pickFiveIndices(results) {
     }
 
     return arr;
-}
-
-function encodeQueryParams(obj) {
-    let str = "";
-    let start = true;
-
-    for (const [key, value] of Object.entries(obj)) {
-        if (start) {
-            str += key + '=' + value;
-            start = false;
-        }
-        else {
-            str += '&' + key + '=' + value;
-        }
-    }
-
-    return str;
 }

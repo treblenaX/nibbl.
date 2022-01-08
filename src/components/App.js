@@ -9,12 +9,12 @@ function App() {
 
   return (
     <div className="hero is-fullheight home-page">
-      <div className="title-container">
+      <main className="title-container">
           <div className="column is-2 is-offset-5">
-              <h1><strong className="title-text">nibble.</strong></h1>
+              <h1><strong className="title-text">nibbl.</strong></h1>
           </div>
           <HomePageModule className="home-page-container" />
-      </div>
+      </main>
       <footer className="footer">
         <FooterModule />
       </footer>
