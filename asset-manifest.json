@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/nibbl./static/css/main.acc35163.chunk.css",
+    "main.js": "/nibbl./static/js/main.055e8114.chunk.js",
+    "main.js.map": "/nibbl./static/js/main.055e8114.chunk.js.map",
+    "runtime-main.js": "/nibbl./static/js/runtime-main.07043127.js",
+    "runtime-main.js.map": "/nibbl./static/js/runtime-main.07043127.js.map",
+    "static/css/2.fc4d167a.chunk.css": "/nibbl./static/css/2.fc4d167a.chunk.css",
+    "static/js/2.4dfae582.chunk.js": "/nibbl./static/js/2.4dfae582.chunk.js",
+    "static/js/2.4dfae582.chunk.js.map": "/nibbl./static/js/2.4dfae582.chunk.js.map",
+    "static/js/3.26e40daa.chunk.js": "/nibbl./static/js/3.26e40daa.chunk.js",
+    "static/js/3.26e40daa.chunk.js.map": "/nibbl./static/js/3.26e40daa.chunk.js.map",
+    "index.html": "/nibbl./index.html",
+    "static/css/2.fc4d167a.chunk.css.map": "/nibbl./static/css/2.fc4d167a.chunk.css.map",
+    "static/css/main.acc35163.chunk.css.map": "/nibbl./static/css/main.acc35163.chunk.css.map",
+    "static/js/2.4dfae582.chunk.js.LICENSE.txt": "/nibbl./static/js/2.4dfae582.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/nibbl./static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07043127.js",
+    "static/css/2.fc4d167a.chunk.css",
+    "static/js/2.4dfae582.chunk.js",
+    "static/css/main.acc35163.chunk.css",
+    "static/js/main.055e8114.chunk.js"
+  ]
+}
