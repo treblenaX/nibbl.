@@ -52,7 +52,6 @@ export default function HomePageModule() {
                         if (pagination && pagination.hasNextPage) { // Get more results
                             pagination.nextPage();
                         } else {    // If there are no more results
-                            console.log(googleData);
                             setGoogleData(pickFiveIndices(googleData));
                             setLoaded(true);
                         }

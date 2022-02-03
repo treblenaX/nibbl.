@@ -2,7 +2,7 @@
   "name": "restaurant-picker",
   "version": "0.1.1",
   "private": true,
-  "homepage": "http://treblenaX.github.io/nibbl.",
+  "homepage": "http://treblenaX.github.io/nibbl./",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
