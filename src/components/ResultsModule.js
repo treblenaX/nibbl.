@@ -67,21 +67,23 @@ function ResultCardDetails(props) {
                     <h3 className="result-card-header-address">{googleData.formatted_address}</h3>
                 </div>
             </div>
-            <div className="card-content">
-                <div className="columns is-mobile result-card-rating">
-                    <div className="column is-narrow is-mobile is-centered">
+            <div className="card-content columns">
+                <div className="column is-centered is-mobile result-card-rating">
+                    <div className="is-narrow is-mobile">
                         <FontAwesomeIcon className="rating-icon" icon={faGoogle} />
                         {createReviewStars(googleData.rating)}
                         <span className="rating-text">{googleData.rating}</span>
+                        <span className="rating-separator"></span>
+                        {createPriceLevel(googleData.price_level)}
                     </div>
                     {/* <div className="column is-narrow">
                         <FontAwesomeIcon className="rating-icon" icon={faYelp} />
                         {createReviewStars(yelpData.rating)}
                         <span className="rating-text">{yelpData.rating}</span>
                     </div> */}
-                    <div className="column is-narrow is-mobile is-centered">
+                    {/* <div className="is-narrow is-mobile">
                         <p>{createPriceLevel(googleData.price_level)}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="card-footer buttons action-buttons">
